@@ -1,0 +1,5 @@
+<li [@fade]="isInit ? 'in' : 'init'" class="list-group-item bg-dark mb-1 " style="color:white; min-height: 60px; "> 
+                     {{item.name}}
+    <button class="btn btn-danger float-right " (click)="del(item.id)" >DEL</button>
+    <button class="btn btn-success float-right mr-2"  (click)="done(item)">DONE</button>
+</li>
